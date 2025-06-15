@@ -1,0 +1,11 @@
+order_id,customer_id,product_name,category,quantity,unit_price,order_date,customer_age,customer_city
+1001,C001,Laptop Pro,Electronics,1,1200.00,2024-01-15,28,New York
+1002,C002,Office Chair,Furniture,2,150.00,2024-01-16,35,Los Angeles
+1003,C003,Smartphone X,Electronics,1,800.00,2024-01-17,22,Chicago
+1004,C004,Desk Lamp,Furniture,3,45.00,2024-01-18,41,Houston
+1005,C005,Tablet Air,Electronics,1,400.00,2024-01-19,33,Phoenix
+1006,C001,Wireless Mouse,Electronics,2,25.00,2024-01-20,28,New York
+1007,C006,Bookshelf,Furniture,1,200.00,2024-01-21,29,Philadelphia
+1008,C007,Headphones,Electronics,1,150.00,2024-01-22,25,San Antonio
+1009,C008,Monitor 4K,Electronics,1,300.00,2024-01-23,38,San Diego
+1010,C009,Ergonomic Keyboard,Electronics,1,75.00,2024-01-24,31,Dallas
