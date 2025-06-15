@@ -1,0 +1,10 @@
+customer_id,customer_name,email,phone,address,city,state,zip_code,registration_date
+C001,John Smith,john.smith@email.com,555-0101,123 Main St,New York,NY,10001,2023-06-15
+C002,Sarah Johnson,sarah.j@email.com,555-0102,456 Oak Ave,Los Angeles,CA,90001,2023-07-20
+C003,Mike Brown,mike.brown@email.com,555-0103,789 Pine St,Chicago,IL,60601,2023-08-10
+C004,Lisa Davis,lisa.davis@email.com,555-0104,321 Elm St,Houston,TX,77001,2023-09-05
+C005,Tom Wilson,tom.wilson@email.com,555-0105,654 Maple Ave,Phoenix,AZ,85001,2023-10-12
+C006,Emma Garcia,emma.garcia@email.com,555-0106,987 Cedar St,Philadelphia,PA,19101,2023-11-18
+C007,David Martinez,david.m@email.com,555-0107,147 Birch Ave,San Antonio,TX,78201,2023-12-03
+C008,Jennifer Lee,jennifer.lee@email.com,555-0108,258 Spruce St,San Diego,CA,92101,2024-01-08
+C009,Robert Taylor,robert.taylor@email.com,555-0109,369 Willow Ave,Dallas,TX,75201,2024-01-15
