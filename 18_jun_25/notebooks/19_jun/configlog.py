@@ -87,4 +87,4 @@ df = spark.createDataFrame(data, ["id", "name","Salary"])
 b_df = df.withColumn("bonus",col("Salary")*.10)
 b_df = df.filter("Salary >2500")
 b_df.show()
-
+spark.stop()
