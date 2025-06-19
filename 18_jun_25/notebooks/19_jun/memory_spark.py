@@ -4,10 +4,11 @@ from pyspark.sql import SparkSession
 spark = (
     SparkSession.builder
     .appName("log propr")
-    .config("spark.executor.cores", "4")
-    .config("spark.executor.memory", "4g")
-    .config("spark.executor.memoryOverhead", "1g")
+    .config("spark.executor.cores", "2")
+    .config("spark.executor.memory", "2g")
+    .config("spark.executor.memoryOverhead", "512m")
     .config("spark.sql.shuffle.partitions","10")
+    .config("spark.driver.memory","1g")
     .getOrCreate()
 )
 print("all partition ", spark.conf.get("spark.sql.shuffle.partitions"))
@@ -21,6 +22,7 @@ spark.sparkContext.setLogLevel("Warn")#pep8, pyspark, python,github(git config -
 # b_df = df.filter("Salary >2500")
 # b_df.show()
 
-df = spark.range(0,1_000_000)
-print("total value : ", df.count())
+df = spark.range(0,10_000_000)
+df_t = df.withColumn("squared",df["id"]*df["id"])
+print("total value : ", df_t.count())
 spark.stop()
