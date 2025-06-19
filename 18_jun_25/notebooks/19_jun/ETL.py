@@ -18,5 +18,7 @@ spark = (
 data = [(i,"Product"+str(i %5 ) , "region"+ str(i%3),i *10.5)  for i in range(1,1000001)]
 df= spark.createDataFrame(data , ["sale_id","Product","region","amount"])
 # print("all partition ", spark.conf.get("spark.sql.shuffle.partitions"))
+df_fil = df.filter(col("amount")>200).select("sale_id","product","region")
 spark.sparkContext.setLogLevel("Warn")
-df.show(5)
+df_fil.show(10)
+df_fil.count()
